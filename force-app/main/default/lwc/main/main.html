@@ -1,0 +1,23 @@
+<template>
+    <lightning-card class="custom-card">
+        <div class="slds-grid slds-gutters slds-grid_vertical-align-center slds-p-around_small">
+            
+        
+        <div class="slds-col slds-size_9-of-12 slds-col slds-float_left  slds-m-bottom_medium ">
+            <lightning-combobox name="ObjectList" onchange={onObjectChange} options={objectList}
+                placeholder="Select Object">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-col slds-size_3-of-12 ">
+
+            <lightning-button label="Create New Record" name="Create New Record" variant="Neutral" icon-name="utility:save"
+                onclick={handleClick}>
+
+            </lightning-button>
+        </div>
+        </div>
+    </lightning-card> <br>
+  
+    <c-field-component object-child-name={objectname} show-button={showButton}></c-field-component>
+   
+</template>

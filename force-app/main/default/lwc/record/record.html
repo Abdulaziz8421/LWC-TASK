@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-col slds-size_9-of-12  slds-scrollable_y" style="height:20rem;">
+        <lightning-datatable key-field="id" 
+                             columns={columnsMap} 
+                            data={allRecordsOfSelectedObject}
+                            show-row-number-column="true" 
+                            onrowaction={handleRowAction}
+                            row-actions={actions}>
+        </lightning-datatable>
+    </div>
+    
+</template>
